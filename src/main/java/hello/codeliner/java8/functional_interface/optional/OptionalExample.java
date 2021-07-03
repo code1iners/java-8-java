@@ -24,6 +24,9 @@ import main.java.hello.codeliner.java8.functional_interface.stream.OnlineClass;
  */
 public class OptionalExample {
     
+    /**
+     * not using Optional type.
+     */
     public static void getProgress() {
         System.out.println("getProgress");
         OnlineClass oc = new OnlineClass(1, "spring boot", true);
@@ -37,6 +40,10 @@ public class OptionalExample {
         }
     }
 
+    /**
+     * ifPresent().
+     * Optional type.
+     */
     public static void getProgressWithOptional() {
         System.out.println("getProgressWithOptional");
         OnlineClass oc = new OnlineClass(1, "spring boot", true);
@@ -44,6 +51,10 @@ public class OptionalExample {
         progress.ifPresent(System.out::println);
     }
 
+    /**
+     * isPresent().
+     * isEmpty().
+     */
     public static void isPresentAndIsEmpty(List<OnlineClass> springs) {
         System.out.println("isPresentAndIsEmpty");
         Optional<OnlineClass> foundFirst = springs.stream()
@@ -57,6 +68,10 @@ public class OptionalExample {
         System.out.println(onlineClass);
     }
 
+    /**
+     * get().
+     * May raise NoSuchElementException.
+     */
     public static void getItem(List<OnlineClass> springs) {
         System.out.println("getItem");
         Optional<OnlineClass> found = springs.stream()
@@ -77,6 +92,10 @@ public class OptionalExample {
         }
     }
 
+    /**
+     * orElse().
+     * not lazy.
+     */
     public static void getOrElse(List<OnlineClass> springs) {
         System.out.println("getOrElse");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -87,6 +106,10 @@ public class OptionalExample {
         System.out.println(orElse);
     }
 
+    /**
+     * orElseGet().
+     * lazy.
+     */
     public static void getOrElseGet(List<OnlineClass> springs) {
         System.out.println("getOrElseGet");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -96,6 +119,10 @@ public class OptionalExample {
         System.out.println(orElseGet);
     }
 
+    /**
+     * orElseThrow().
+     * raise NoSuchElementException.
+     */
     public static void getOrElseThrow(List<OnlineClass> springs) {
         System.out.println("getOrElseThrow");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -109,6 +136,9 @@ public class OptionalExample {
             }
     }
 
+    /**
+     * filter().
+     */
     public static void optionalFilter(List<OnlineClass> springs) {
         System.out.println("filter");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -119,6 +149,9 @@ public class OptionalExample {
         filtered.ifPresent(System.out::println);
     }
 
+    /**
+     * map().
+     */
     public static void optionalMap(List<OnlineClass> springs) {
         System.out.println("optionalMap");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -129,6 +162,9 @@ public class OptionalExample {
         mapped.ifPresent(System.out::println);
     }
 
+    /**
+     * flatMap() not applied.
+     */
     public static void getOptionalTypeItem(List<OnlineClass> springs) {
         System.out.println("getOptionalTypeItem");
         Optional<OnlineClass> foundAny = springs.stream()
@@ -144,6 +180,9 @@ public class OptionalExample {
         }
     }
 
+    /**
+     * flatMap() applied.
+     */
     public static void optionalFlatMap(List<OnlineClass> springs) {
         System.out.println("optionalFlatMap");
         Optional<OnlineClass> foundAny = springs.stream()
