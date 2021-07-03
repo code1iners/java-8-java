@@ -1,4 +1,4 @@
-package main.java.hello.codeliner.java8.functional_interface;
+package main.java.hello.codeliner.java8.functional_interface.basic;
 
 /**
  * @implSpec
@@ -12,7 +12,7 @@ package main.java.hello.codeliner.java8.functional_interface;
 public class Runner {
     public static void main(String[] args) {
 
-        // note. 함수형 인터페이스 -> 익명 클래스.
+        // note. 함수형 인터페이스 -> 익명 내부 클래스.
         FunctionalInterfaceNoArg noArgAnonymousClass = new FunctionalInterfaceNoArg() {
             @Override
             public void print() {
