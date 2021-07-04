@@ -1,4 +1,4 @@
-package main.java.hello.codeliner.java8.functional_interface.optional;
+package main.java.hello.codeliner.java8.optional;
 
 import java.time.Duration;
 

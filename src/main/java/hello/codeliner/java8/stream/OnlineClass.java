@@ -1,8 +1,8 @@
-package main.java.hello.codeliner.java8.functional_interface.stream;
+package main.java.hello.codeliner.java8.stream;
 
 import java.util.Optional;
 
-import main.java.hello.codeliner.java8.functional_interface.optional.Progress;
+import main.java.hello.codeliner.java8.optional.Progress;
 
 public class OnlineClass {
 

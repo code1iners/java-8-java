@@ -1,9 +1,9 @@
-package main.java.hello.codeliner.java8.functional_interface.optional;
+package main.java.hello.codeliner.java8.optional;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.hello.codeliner.java8.functional_interface.stream.OnlineClass;
+import main.java.hello.codeliner.java8.stream.OnlineClass;
 
 public class Runner {
     

@@ -1,4 +1,4 @@
-package main.java.hello.codeliner.java8.functional_interface.interface_java8.java8_;
+package main.java.hello.codeliner.java8.interface_java8.java8_;
 
 import java.util.Comparator;
 import java.util.List;

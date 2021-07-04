@@ -1,11 +1,11 @@
-package main.java.hello.codeliner.java8.functional_interface.optional;
+package main.java.hello.codeliner.java8.optional;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
-import main.java.hello.codeliner.java8.functional_interface.stream.OnlineClass;
+import main.java.hello.codeliner.java8.stream.OnlineClass;
 
 /**
  * Optional.of()

@@ -1,4 +1,4 @@
-package main.java.hello.codeliner.java8.functional_interface.stream;
+package main.java.hello.codeliner.java8.stream;
 
 import java.util.ArrayList;
 import java.util.List;
